@@ -8,6 +8,8 @@ Soy un entusiasta del aprendizaje, del software libre y siempre buscando nuevas 
 
 ## Mis tecnologías favoritas a trabajar 💻
 
+
+
 <p>
   <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/7dbe565f-92c6-4aca-a801-1d3363a67aeb" width="50">
   <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/422f5509-3da0-4741-b1bb-3cefad36e000" width="50">
@@ -20,3 +22,4 @@ Soy un entusiasta del aprendizaje, del software libre y siempre buscando nuevas 
   <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/808d6d31-d823-4b9e-959b-1e49a6fb9322" width="50">
   <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/b5f6b62a-3f6b-4c12-b2dd-6b53dc0e230f" width="50">
 </p>
+
