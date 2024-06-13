@@ -17,8 +17,8 @@ Soy un entusiasta del aprendizaje, del software libre y siempre buscando nuevas 
   <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/76989c81-8c8c-499a-95b0-0dac5fc12ac2" width="50">
   <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/e9d48102-cfd0-4f62-886a-c752b728258c" width="50">
   <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/7c2fe96a-23bd-48c3-9839-69013717896f" width="50">
-  <!--<img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/d126f766-789c-41b2-ac1d-e58c409e4811" width="50">
-  <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/0d23d85e-4b5a-452e-8351-ad919814f400" width="50">
+  <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/d126f766-789c-41b2-ac1d-e58c409e4811" width="50">
+  <!--<img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/0d23d85e-4b5a-452e-8351-ad919814f400" width="50">
   <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/808d6d31-d823-4b9e-959b-1e49a6fb9322" width="50">
   <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/b5f6b62a-3f6b-4c12-b2dd-6b53dc0e230f" width="50">-->
 </p>
