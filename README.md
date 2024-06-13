@@ -13,7 +13,7 @@ Soy un entusiasta del aprendizaje, del software libre y siempre buscando nuevas 
 <p>
   <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/7dbe565f-92c6-4aca-a801-1d3363a67aeb" width="50">
   <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/422f5509-3da0-4741-b1bb-3cefad36e000" width="50">
-  <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/0a191a72-eb62-486f-9aaa-980926bf2e46" width="50">
+  <!--<img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/0a191a72-eb62-486f-9aaa-980926bf2e46" width="50">-->
   <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/76989c81-8c8c-499a-95b0-0dac5fc12ac2" width="50">
   <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/e9d48102-cfd0-4f62-886a-c752b728258c" width="50">
   <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/7c2fe96a-23bd-48c3-9839-69013717896f" width="50">
