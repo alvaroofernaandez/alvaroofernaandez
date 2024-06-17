@@ -6,9 +6,9 @@ Estoy enfocado en expandir mis habilidades en lenguajes de programación, metodo
 
 Soy un entusiasta del aprendizaje, del software libre y siempre buscando nuevas maneras de mejorar y enfrentar desafíos con determinación.
 
-## Mis tecnologías favoritas a trabajar 💻
+## Tecnologías 💻
 
-Es lo que hasta ahora más he trabajado, aprendido y más me gusta usar actualmente. ✌️
+Es lo que hasta ahora más he trabajado, aprendido y más suelo usar actualmente. ✌️
 
 
 <p>
