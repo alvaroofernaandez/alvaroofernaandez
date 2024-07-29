@@ -18,6 +18,7 @@ Es lo que hasta ahora más he trabajado, aprendido y más suelo usar actualmente
   <img width="50" src="https://img.icons8.com/color/48/git.png" alt="git"/>
   <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/d126f766-789c-41b2-ac1d-e58c409e4811" width="50">
   <img width="35" src="https://astro.build/assets/press/astro-icon-light-gradient.png"/>
+  <img width="50" src="https://img.icons8.com/color/48/tailwind_css.png" alt="tailwind_css"/>
 
 
 ## Tecnologías que estoy aprendiendo 📚
