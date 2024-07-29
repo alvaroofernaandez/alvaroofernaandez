@@ -18,7 +18,7 @@ Es lo que hasta ahora más he trabajado, aprendido y más suelo usar actualmente
   <img width="50" src="https://img.icons8.com/color/48/git.png" alt="git"/>
   <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/d126f766-789c-41b2-ac1d-e58c409e4811" width="50">
   <img width="35" src="https://astro.build/assets/press/astro-icon-light-gradient.png"/>
-  <img width="50" src="https://img.icons8.com/color/48/tailwind_css.png" alt="tailwind_css"/>
+  <img width="50" margin="3" src="https://img.icons8.com/color/48/tailwind_css.png" alt="tailwind_css"/>
 
 
 ## Tecnologías que estoy aprendiendo 📚
@@ -34,6 +34,8 @@ Estas tecnologías son en las que principalmente me estoy interesando para pract
 <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/0a191a72-eb62-486f-9aaa-980926bf2e46" width="50">
 <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/0d23d85e-4b5a-452e-8351-ad919814f400" width="50">
 <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/7c2fe96a-23bd-48c3-9839-69013717896f" width="50">
-
+<img src="https://img.icons8.com/?size=100&id=Mm35TzLKahiF&format=png&color=000000" width="50">
+<img src="https://img.icons8.com/?size=100&id=wpZmKzk11AzJ&format=png&color=000000" width="50">
+<img src="https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000" width="50">
 </p>
 
