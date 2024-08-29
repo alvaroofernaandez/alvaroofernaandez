@@ -33,7 +33,6 @@ Estas tecnologías son en las que principalmente me estoy interesando para pract
 <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/7dbe565f-92c6-4aca-a801-1d3363a67aeb" width="50">
 <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/0a191a72-eb62-486f-9aaa-980926bf2e46" width="50">
 <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/7c2fe96a-23bd-48c3-9839-69013717896f" width="50">
-<img src="https://img.icons8.com/?size=100&id=Mm35TzLKahiF&format=png&color=000000" width="50">
 <img src="https://img.icons8.com/?size=100&id=wpZmKzk11AzJ&format=png&color=000000" width="50">
 </p>
 
