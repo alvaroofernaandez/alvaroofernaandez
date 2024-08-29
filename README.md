@@ -1,10 +1,12 @@
 ## Hello world!👋
 
-Soy Álvaro, un estudiante comprometido con el mundo del desarrollo web y de software, actualmente cursando un grado superior en Desarrollo de Aplicaciones Multiplataforma. Mi pasión por la tecnología se refleja en mi dedicación a adquirir conocimientos sólidos en programación y diseño web, con el objetivo de convertirme en un profesional versátil y capaz de crear soluciones innovadoras.
+  <p>
+    Soy Álvaro, un estudiante comprometido con el mundo del desarrollo web y de software, actualmente cursando un grado superior en Desarrollo de Aplicaciones Multiplataforma. Mi pasión por la tecnología se refleja en mi dedicación a adquirir conocimientos sólidos en programación y diseño web, con el objetivo de convertirme en un profesional versátil y capaz de crear soluciones innovadoras.
 
-Estoy enfocado en expandir mis habilidades en lenguajes de programación, metodologías ágiles y diseño UX/UI, buscando oportunidades que me permitan crecer y contribuir al ámbito del desarrollo. Mi enfoque proactivo, mis ganas por el aprendizaje continuo y mi determinación para enfrentar desafíos me impulsan a mejorar constantemente y a explorar nuevas tecnologías.
+  Estoy enfocado en expandir mis habilidades en lenguajes de programación, metodologías ágiles y diseño UX/UI, buscando oportunidades que me permitan crecer y contribuir al ámbito del desarrollo. Mi enfoque proactivo, mis ganas por el aprendizaje continuo y mi determinación para enfrentar desafíos me impulsan a mejorar constantemente y a explorar nuevas tecnologías.
 
-Soy un entusiasta del aprendizaje, del software libre y siempre buscando nuevas maneras de mejorar y enfrentar desafíos con determinación.
+  Soy un entusiasta del aprendizaje, del software libre y siempre buscando nuevas maneras de mejorar y enfrentar desafíos con determinación.
+  </p>
 
 <hr>
 
