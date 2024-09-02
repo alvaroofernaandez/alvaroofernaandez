@@ -1,7 +1,3 @@
-<div align="center">
-  <img src="https://avatars.githubusercontent.com/u/145365209?v=4" width="200">
-</div>
-
 ## Bienvenido/a, estas son algunas cosas sobre mí 👋
 
   <p>
