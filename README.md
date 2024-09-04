@@ -28,7 +28,7 @@ Es lo que hasta ahora más he trabajado, aprendido y más suelo usar actualmente
   <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/e9d48102-cfd0-4f62-886a-c752b728258c" width="50">
   <img width="50" src="https://img.icons8.com/color/48/c-programming.png" alt="c-programming"/>
   <img width="50" src="https://img.icons8.com/color/48/git.png" alt="git"/>
-  <img src="https://img.icons8.com/?size=100&id=qV-JzWYl9dzP&format=png&color=000000" width="50">
+  <img src="https://github.com/user-attachments/assets/f74b4722-a4fc-455f-aeae-15657f14ee2d" width="50">
   <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/d126f766-789c-41b2-ac1d-e58c409e4811" width="50">
   <img width="35" src="https://astro.build/assets/press/astro-icon-light-gradient.png"/>
   <img width="50" margin="3" src="https://img.icons8.com/color/48/tailwind_css.png" alt="tailwind_css"/>
@@ -48,4 +48,5 @@ Estas tecnologías son en las que principalmente me estoy interesando para pract
 <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/7c2fe96a-23bd-48c3-9839-69013717896f" width="50">
 <img src="https://img.icons8.com/?size=100&id=90519&format=png&color=000000" width="50">
 </p>
+
 
