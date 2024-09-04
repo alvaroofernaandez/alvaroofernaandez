@@ -43,10 +43,9 @@ Estas tecnologías son en las que principalmente me estoy interesando para pract
 <img width="50" src="https://img.icons8.com/color/48/nodejs.png" alt="nodejs"/>
 <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/7dbe565f-92c6-4aca-a801-1d3363a67aeb" width="50">
 <img src="https://img.icons8.com/?size=100&id=wpZmKzk11AzJ&format=png&color=000000" width="50">
+<img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/422f5509-3da0-4741-b1bb-3cefad36e000" width="50">
 <img width="50" src="https://img.icons8.com/color/48/c-sharp-logo.png" alt="c-sharp-logo"/>
 <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/7c2fe96a-23bd-48c3-9839-69013717896f" width="50">
 <img src="https://img.icons8.com/?size=100&id=90519&format=png&color=000000" width="50">
-
-<img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/422f5509-3da0-4741-b1bb-3cefad36e000" width="50">
 </p>
 
