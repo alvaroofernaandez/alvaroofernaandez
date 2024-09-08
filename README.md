@@ -1,52 +1,21 @@
-## Bienvenido/a, estas son algunas cosas sobre mí 👋
-
-  <p>
-    Soy Álvaro, un estudiante comprometido con el mundo del desarrollo web y de software, actualmente cursando un grado superior en Desarrollo de Aplicaciones Multiplataforma. Mi pasión por la tecnología se refleja en mi dedicación a adquirir conocimientos sólidos en programación y diseño web, con el objetivo de convertirme en un profesional versátil y capaz de crear soluciones innovadoras.
-
-  Estoy enfocado en expandir mis habilidades en lenguajes de programación, metodologías ágiles y diseño UX/UI, buscando oportunidades que me permitan crecer y contribuir al ámbito del desarrollo. Mi enfoque proactivo, mis ganas por el aprendizaje continuo y mi determinación para enfrentar desafíos me impulsan a mejorar constantemente y a explorar nuevas tecnologías.
-
-  Soy un entusiasta del aprendizaje, del software libre y siempre buscando nuevas maneras de mejorar y enfrentar desafíos con determinación.
-  </p>
-
-<hr>
-
-## Trabajo en 🧑🏻‍💻:
-<p>
-  <img src="https://img.icons8.com/?size=100&id=M8ngjhax4yDv&format=png&color=22C3E6" width="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="50""  />
-</p>
-
-<hr>
-
-## Tecnologías 💻
-
-Es lo que hasta ahora más he trabajado, aprendido y más suelo usar actualmente. ✌️
+# 💫 About Me:
+ Soy Álvaro, un estudiante comprometido con el mundo del desarrollo web y de software, actualmente cursando un grado superior en Desarrollo de Aplicaciones Multiplataforma. Mi pasión por la tecnología se refleja en mi dedicación a adquirir conocimientos sólidos en programación y diseño web, con el objetivo de convertirme en un profesional versátil y capaz de crear soluciones innovadoras.<br><br>Estoy enfocado en expandir mis habilidades en lenguajes de programación, metodologías ágiles y diseño UX/UI, buscando oportunidades que me permitan crecer y contribuir al ámbito del desarrollo. Mi enfoque proactivo, mis ganas por el aprendizaje continuo y mi determinación para enfrentar desafíos me impulsan a mejorar constantemente y a explorar nuevas tecnologías.<br><br>Soy un entusiasta del aprendizaje, del software libre y siempre buscando nuevas maneras de mejorar y enfrentar desafíos con determinación.
 
 
-<p>
-  <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/76989c81-8c8c-499a-95b0-0dac5fc12ac2" width="50">
-  <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/e9d48102-cfd0-4f62-886a-c752b728258c" width="50">
-  <img width="50" src="https://img.icons8.com/color/48/c-programming.png" alt="c-programming"/>
-  <img width="50" src="https://img.icons8.com/color/48/git.png" alt="git"/>
-  <img src="https://github.com/user-attachments/assets/f74b4722-a4fc-455f-aeae-15657f14ee2d" width="50">
-  <img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/d126f766-789c-41b2-ac1d-e58c409e4811" width="50">
-  <img width="35" src="https://astro.build/assets/press/astro-icon-light-gradient.png"/>
-  <img width="50" margin="3" src="https://img.icons8.com/color/48/tailwind_css.png" alt="tailwind_css"/>
-  
+## 🌐 Socials:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/%C3%A1lvaro-fern%C3%A1ndez-amaro-6527b929b/) 
 
-## Tecnologías que estoy aprendiendo 📚
+# 💻 Tech Stack:
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Astro](https://img.shields.io/badge/astro-%232C2052.svg?style=for-the-badge&logo=astro&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+# 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=alvaroofernaandez&theme=one_dark_pro&hide_border=true&include_all_commits=true&count_private=true)<br/>
+![](https://github-readme-streak-stats.herokuapp.com/?user=alvaroofernaandez&theme=one_dark_pro&hide_border=true)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=alvaroofernaandez&theme=one_dark_pro&hide_border=true&include_all_commits=true&count_private=true&layout=compact)
 
-Estas tecnologías son en las que principalmente me estoy interesando para practicar y aprender. 🧐
-<br>
-<p>
-<img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/0a191a72-eb62-486f-9aaa-980926bf2e46" width="50">
-<img width="50" src="https://img.icons8.com/color/48/nodejs.png" alt="nodejs"/>
-<img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/7dbe565f-92c6-4aca-a801-1d3363a67aeb" width="50">
-<img src="https://img.icons8.com/?size=100&id=wpZmKzk11AzJ&format=png&color=000000" width="50">
-<img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/422f5509-3da0-4741-b1bb-3cefad36e000" width="50">
-<img width="50" src="https://img.icons8.com/color/48/c-sharp-logo.png" alt="c-sharp-logo"/>
-<img src="https://github.com/alvaroofernaandez/alvaroofernaandez/assets/145365209/7c2fe96a-23bd-48c3-9839-69013717896f" width="50">
-<img src="https://img.icons8.com/?size=100&id=90519&format=png&color=000000" width="50">
-</p>
+## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=alvaroofernaandez&theme=one_dark_pro&no-frame=true&no-bg=true&margin-w=4)
 
+### 🔝 Top Contributed Repo
+![](https://github-contributor-stats.vercel.app/api?username=alvaroofernaandez&limit=5&theme=one_dark_pro&combine_all_yearly_contributions=true)
 
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
