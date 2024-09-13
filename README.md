@@ -4,7 +4,8 @@ Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-912
 <b>JR Full Stack Developer</b>
 ------------------------------------------------
 
-I am a student committed to the world of web and software development, currently pursuing a higher degree in Multiplatform Application Development. My passion for technology is reflected in my dedication to acquiring solid knowledge in programming and web design, with the goal of becoming a versatile professional capable of creating innovative solutions. I am focused on expanding my skills in all types of technologies, looking for opportunities that allow me to grow and contribute to the development field. My proactive approach, my desire for continuous learning and my determination to face challenges drive me to constantly improve and explore new technologies.
+I am a student committed to the world of web and software development, currently pursuing a higher degree in Multiplatform Application Development. My passion for technology is reflected in my dedication to acquiring solid knowledge in programming and web design, with the goal of becoming a versatile professional capable of creating innovative solutions. 
+I am focused on expanding my skills in all types of technologies, looking for opportunities that allow me to grow and contribute to the development field. My proactive approach, my desire for continuous learning and my determination to face challenges drive me to constantly improve and explore new technologies.
 
 *   🌍  I'm based in Córdoba, Spain
 *   ✉️  You can contact me at [alvaroofernaandez@gmail.com](mailto:alvaroofernaandez@gmail.com)
