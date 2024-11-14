@@ -24,9 +24,5 @@ I am focused on expanding my skills in all types of technologies, looking for op
 
 # 🎖️ Badges:
 
-<b>My GitHub Stats</b>
-
-|   |   |
-|---|---|
-| [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=alvaroofernaandez&show_icons=true&hide=&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true)](http://www.github.com/alvaroofernaandez) | [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=alvaroofernaandez&stroke=ffffff&background=1c1917&ring=0891b2&fire=0891b2&currStreakNum=ffffff&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true)](http://www.github.com/alvaroofernaandez) |
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=alvaroofernaandez&show_icons=true&hide=&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true)](http://www.github.com/alvaroofernaandez)
 
