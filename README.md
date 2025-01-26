@@ -11,7 +11,7 @@ I am focused on expanding my skills in all types of technologies, looking for op
 *   🌍  I'm based in Córdoba, Spain
 *   ✉️  You can contact me at [alvaroofernaandez@gmail.com](mailto:alvaroofernaandez@gmail.com)
 *   🚀  I'm currently working on [App Luna as a frontend developer](http://appluna.netlify.app) and [Aula de Software Libre - FP Córdoba](http://aulasoftwarelibrecordoba.netlify.app)
-*   🧠  I'm current learning Javascript, React, Java and Python
+*   🧠  I'm current learning Python, Django and Typescript
 
 # <img src="/logo.svg" width="25px" height="25px" style="vertical-align: middle; margin-right: 10px;"/> Aula de Software Libre FP Córdoba Admin
 
