@@ -1,4 +1,4 @@
-=============================================================================================================
+===================================================================================================
 
 <b>Full Stack Developer</b>
 ------------------------------------------------
@@ -18,4 +18,4 @@ Siempre en evolución, siempre buscando el equilibrio entre innovación y simpli
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/postgresql-0f9aaa.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%23007ACC.svg?style=for-the-badge&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-004cff.svg?style=for-the-badge&logo=kubernetes&logoColor=white)
 ------------------------------------------------
 
-=============================================================================================================
+===================================================================================================
