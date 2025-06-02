@@ -1,6 +1,6 @@
 ===================================================================================================
 
-<b>Full Stack Developer</b>
+<b>Full Stack Developer & CDO en Hagalink</b>
 ------------------------------------------------
 
 Full-Stack Developer con enfoque en construir soluciones robustas, escalables y mantenibles. 
