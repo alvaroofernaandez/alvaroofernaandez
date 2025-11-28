@@ -1,4 +1,4 @@
-# Hi, I'm [Your Name] 👋
+# Hi, I'm Álvaro 👋
 
 ## UI/UX Product Designer, Software Engineer & CDO at Hagalink
 
