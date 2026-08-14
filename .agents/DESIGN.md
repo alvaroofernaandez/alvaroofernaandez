@@ -277,14 +277,23 @@ thing marbling can never be. Generating the ground costs about 48KB of path
 data in the poster; that is the price of the ground not repeating, and it is
 worth paying.
 
-**2026-08-14 — Asset renames are the cache-busting mechanism.**
-`hero.svg` became `poster.svg`. GitHub serves README images through a caching
-proxy, and after a redesign the old artwork kept being served to anyone who had
-already loaded the page, which reads exactly like a change that never shipped.
-Verify with `curl` against `raw.githubusercontent.com` before believing a bug
-report about a stale visual. When the served bytes are correct and the page
-still looks old, change the filename: a new path is a new cache entry for every
-visitor, which telling one person to hard-refresh is not.
+**2026-08-14 — A version query is the cache-busting mechanism.**
+*(supersedes the rename rule recorded the same day)*
+
+GitHub serves README images through a caching proxy, so after a redesign the
+old artwork keeps being served to anyone who already loaded the page. That is
+indistinguishable from a change that never shipped. Diagnose it by curling
+`raw.githubusercontent.com`: if the served bytes are already correct, it is
+cache, not code.
+
+The first fix was a rename, `hero.svg` to `poster.svg`. That works but leaves
+the filename carrying version history, which it should not.
+
+Verified better: GitHub preserves query strings when it rewrites relative image
+paths, so `assets/poster.svg?v=2` reaches the browser intact and is a distinct
+cache key. **Bump the `v` on every visual change to a committed asset.** Do not
+rename files for this, and do not tell one person to hard-refresh: that fixes
+the page for them and for nobody else who has already visited.
 
 **2026-08-14 — Assets are committed, the generator is not.**
 The build tool needs Python, fontTools, uharfbuzz, and two font files. Shipping
