@@ -6,17 +6,16 @@ are part of the design system, not an afterthought.
 
 ## 1. Intent & North Star
 
-**Direction: "Steel and signal", composed as a kakemono.** A centred ink scroll,
-printed on marbled ink, with one acid signal in it.
+**Direction: an ink kakemono.** A centred scroll, printed on marbled ink,
+entirely in black and white.
 
 The visitor arrives from a proposal or a shared link, at night, on GitHub's dark
 theme, and decides in about four seconds whether this person is serious. The
 page answers with a printed object, not a résumé.
 
-The identity blends two sources deliberately: the personal register comes from
-the ink typography and the 鋼の心 column (the account's own bio, "heart of
-steel"), and the single accent colour is Hagalink's lime, so the personality is
-his and the colour is his company's.
+The identity is personal rather than corporate: ink typography and 鋼の心, the
+account's own bio, "heart of steel". Hagalink appears in the role line as a
+fact, not as branding.
 
 **The Japanese register is built from construction, not motifs.** Every
 ornament is drawn geometry with a name and a history:
@@ -29,11 +28,12 @@ ornament is drawn geometry with a name and a history:
   by `x += comb·sin(y / combLen)`. Rings in one drop share its harmonics so
   they nest like real ink; the phase drifts outward so they never look like
   plain offset curves.
-- **Tategaki (縦書き)** — the bio reads top to bottom, centred above the name.
-- **Hanko** — the lime square, set at the foot beneath the signature, where a
-  seal belongs. It is not a bullet and never repeats.
+- **The bio as a closing motto** — 鋼の心 set horizontally beneath the name and
+  role, widely tracked. Wide tracking is what keeps three glyphs from reading
+  as a cramped word rather than a formal mark.
 
-All ornament is monochrome. Lime appears exactly once, on the hanko.
+**The poster is entirely monochrome.** There is no accent colour on it at all.
+Lime survives only as a token, unused, for anything the profile may need later.
 
 **Anti-references (explicitly rejected):**
 
@@ -53,7 +53,7 @@ All ornament is monochrome. Lime appears exactly once, on the hanko.
 | --- | --- | --- |
 | `ink` | `#0B0B0C` | Ground of every asset |
 | `bone` | `#EDE7DC` | All type and all ornament |
-| `lime` | `#E6FF2B` | The hanko, and nothing else |
+| `lime` | `#E6FF2B` | Reserved, currently unused in every asset |
 | `wash` | `#171B1C` | Radial sumi wash over the ground |
 
 **Opacity ramp on ink** (measured, not guessed):
@@ -61,8 +61,8 @@ All ornament is monochrome. Lime appears exactly once, on the hanko.
 | Opacity | Role |
 | --- | --- |
 | `1.00` | The signature |
-| `0.88` | The bio glyphs |
 | `0.72` | The role line (8.4:1) |
+| `0.70` | The bio motto (8:1) |
 | `0.20` | Suminagashi in the divider |
 | `0.13` | Suminagashi in the poster |
 
@@ -93,7 +93,7 @@ multiply by ~0.69 for rendered pixels):
 | Step | Size | Tracking |
 | --- | --- | --- |
 | Signature | 80 | 0.01em |
-| Bio glyph | 50 | — |
+| Bio motto | 48 | 0.8em |
 | Role line | 26 | 0.05em |
 
 The signature and the role line are set to nearly equal measures (684 and 688
@@ -103,22 +103,20 @@ rather than merely aligned.
 
 ## 3. Layout Primitives
 
-Poster canvas 1200 × 566. **Everything is centred on the midline at x 600.**
+Poster canvas 1200 × 430. **Everything is centred on the midline at x 600**, in
+one falling stack: name, role, motto.
 
 | Element | Position |
 | --- | --- |
-| Bio glyphs | baselines 134 / 192 / 250, size 50 |
-| Signature | baseline 376 |
-| Role line | baseline 422 |
-| Hanko | 16 × 16 at y 460 |
+| Signature | baseline 186, size 80 |
+| Role line | baseline 232, size 26 |
+| Bio motto | baseline 312, size 48, tracking 0.8em |
 
-Top and bottom margins are optically equal at roughly 90 units.
+Top and bottom margins are optically equal at roughly 112 units. The top margin
+is measured to the **accent**, not the cap line: the acute on "Á" rises above
+cap height.
 
-The gap between the bio and the signature is measured to the **accent**, not to
-the cap line: the acute on "Á" rises above cap height and collided with 心 at
-the first spacing.
-
-Ink drops at (250, 250), (640, 300), (995, 215); divider drops at (320, 300)
+Ink drops at (250, 180), (640, 225), (995, 155); divider drops at (320, 300)
 and (880, 322), placed below the strip so only their broad upper contours cross
 it. Drops inside a thin strip produce small tight arcs that read as noise.
 
@@ -128,7 +126,7 @@ Divider canvas 1200 × 80, full bleed, ink ground masked to nothing at both ends
 
 ### Poster (`assets/poster.svg`)
 
-Bio, signature, role, hanko, over the suminagashi ground.
+Signature, role, and bio motto over the suminagashi ground.
 Accessibility: `role="img"`, `<title>`, and `aria-label` inside the SVG, plus
 `alt` on the `<img>` in the README. Both are required, because the SVG's own
 accessibility tree is not exposed through `<img>`.
@@ -163,13 +161,11 @@ governs the poster and headings, not the spelling of proper nouns.
 below the fold, and an `<img>` animation fires on load regardless of viewport,
 so its entrance would play unseen. Deliberately static.
 
-**The gesture:** the bio lands top to bottom in the reading direction of
-tategaki, the signature and role follow, and the hanko is pressed last, the way
-a seal closes a signed scroll. The ground never animates. Nothing loops.
+**The gesture:** the stack settles in reading order, name then role then motto.
+The ground never animates. Nothing loops.
 
 - Curve: `cubic-bezier(.16, 1, .3, 1)`.
-- Rises 780ms, press 520ms.
-  Delays 120 / 200 / 280 / 420 / 500 / 660ms. Total under 1.2s.
+- Rises 780ms. Delays 120 / 200 / 320ms. Total under 1.1s.
 - `prefers-reduced-motion: reduce` sets `animation: none` on every class. The
   reduced state is the finished state.
 
@@ -177,8 +173,8 @@ a seal closes a signed scroll. The ground never animates. Nothing loops.
 nothing animates existence. An animation starting from `opacity: 0` with
 `animation-fill-mode: backwards` publishes a blank poster in any renderer that
 does not run the animation; this was reproduced in headless Chromium during the
-build. Worst case now: type sits 16 units low and the hanko sits 20% large. The
-ground is never animated at all. Every element remains present and legible.
+build. Worst case now: type sits 16 units low. The ground is never animated at
+all. Every element remains present and legible.
 
 ### Positioning versus motion
 
@@ -193,8 +189,7 @@ must live on separate nested groups. Never merge them.
 - The poster's `alt` transcribes it in full, including a gloss of 鋼の心, since
   the meaning is unavailable to a non-Japanese reader. The divider is `alt=""`.
 - `prefers-reduced-motion` honoured.
-- Colour is never the only carrier of meaning: the hanko marks a signature's
-  foot, never a state.
+- The poster is monochrome, so no meaning rests on colour at all.
 - The role line is small at mobile widths by design. Its content is repeated as
   real markdown text below, so no information lives only inside an image.
 
@@ -212,7 +207,8 @@ must live on separate nested groups. Never merge them.
 - `@font-face` or `font-family` inside an asset. Outline the type.
 - Animating `opacity`, or animating existence, on anything.
 - Emoji standing in for icons.
-- A second typeface, or lime used on anything but the hanko.
+- A second typeface, or any colour reintroduced without a deliberate decision
+  logged below. The poster is monochrome.
 - `<picture>` with `prefers-color-scheme` for theme switching.
 - Ornament above the text floor: the ground must stay quieter than the type it
   sits behind.
@@ -265,6 +261,19 @@ changes:
 - Ornament was added rather than implied: seigaiha ground, the enso ring, and a
   closing divider. The keisen hairline and the horizontal brush rule are
   **superseded and removed**, since the enso now carries the brush gesture.
+
+**2026-08-14 — Bio moved horizontal, hanko removed, poster fully monochrome.**
+Requested by the maintainer. Three changes:
+
+- The lime hanko is **superseded and deleted**. With it goes the last colour on
+  the poster, and with that the "signal" half of the original "Steel and
+  signal" direction. The token stays defined but unused; if an accent ever
+  returns it should return as one deliberate element, not as decoration.
+- Tategaki is **superseded**: 鋼の心 now reads horizontally beneath the name and
+  role, widely tracked at 0.8em so three glyphs read as a formal mark rather
+  than a cramped word.
+- With the column and the ring both gone the poster is a single falling stack,
+  and its height drops from 566 units to 430.
 
 **2026-08-14 — Suminagashi ground, enso removed.**
 Requested by the maintainer. The seigaiha tile and the enso ring are
