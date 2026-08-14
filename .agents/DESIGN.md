@@ -7,7 +7,7 @@ are part of the design system, not an afterthought.
 ## 1. Intent & North Star
 
 **Direction: "Steel and signal", composed as a kakemono.** A centred ink scroll,
-printed on wave-patterned ground, with one acid signal in it.
+printed on marbled ink, with one acid signal in it.
 
 The visitor arrives from a proposal or a shared link, at night, on GitHub's dark
 theme, and decides in about four seconds whether this person is serious. The
@@ -21,12 +21,15 @@ his and the colour is his company's.
 **The Japanese register is built from construction, not motifs.** Every
 ornament is drawn geometry with a name and a history:
 
-- **Seigaiha (青海波)** — concentric wave scales, tiled as the ground. It is the
-  paper the poster is printed on, never a foreground element.
-- **Enso (円相)** — the single-stroke zen ring, framing the bio. Drawn as a
-  swept path whose thickness swells mid-sweep and thins where the brush lands
-  and lifts, with an open gap. A uniform stroked circle is not an enso.
-- **Tategaki (縦書き)** — the bio reads top to bottom inside the ring.
+- **Suminagashi (墨流し)** — floating-ink marbling, the ground. Rings spread
+  from three drops and a current combs them into flowing contours. Generated
+  from harmonics plus a horizontal shear, **never tiled**: a repeating tile
+  reads as wallpaper, and marbling never repeats. Each ring is a closed curve
+  `r(θ) = R·(1 + Σ aₖ·sin(nₖθ + φₖ + i·drift))`, squashed on y, then displaced
+  by `x += comb·sin(y / combLen)`. Rings in one drop share its harmonics so
+  they nest like real ink; the phase drifts outward so they never look like
+  plain offset curves.
+- **Tategaki (縦書き)** — the bio reads top to bottom, centred above the name.
 - **Hanko** — the lime square, set at the foot beneath the signature, where a
   seal belongs. It is not a bullet and never repeats.
 
@@ -51,26 +54,29 @@ All ornament is monochrome. Lime appears exactly once, on the hanko.
 | `ink` | `#0B0B0C` | Ground of every asset |
 | `bone` | `#EDE7DC` | All type and all ornament |
 | `lime` | `#E6FF2B` | The hanko, and nothing else |
-| `wash` | `#171B1C` | Radial sumi wash behind the ring |
+| `wash` | `#171B1C` | Radial sumi wash over the ground |
 
 **Opacity ramp on ink** (measured, not guessed):
 
 | Opacity | Role |
 | --- | --- |
 | `1.00` | The signature |
-| `0.82` | The bio glyphs |
+| `0.88` | The bio glyphs |
 | `0.72` | The role line (8.4:1) |
-| `0.30` | The enso |
-| `0.12` | Seigaiha in the divider |
-| `0.06` | Seigaiha in the poster |
+| `0.20` | Suminagashi in the divider |
+| `0.13` | Suminagashi in the poster |
 
-Ornament and ground texture sit below the text floor on purpose; they carry no
-information. Do not drop actual type below `0.52` (4.8:1). The bio was tried at
-`0.30`, measured 2.4:1, and failed even the 3:1 large-text minimum.
+Ground texture sits below the text floor on purpose; it carries no information.
+Do not drop actual type below `0.52` (4.8:1). The bio was tried at `0.30`,
+measured 2.4:1, and failed even the 3:1 large-text minimum.
 
-The two seigaiha values differ because the divider is a thin strip: at the
-poster's `0.06` it would disappear. They are tuned to read as the same paper,
-not to be the same number.
+The two suminagashi values differ because the divider is a thin strip: at the
+poster's `0.13` it would disappear. They are tuned to read as the same ink, not
+to be the same number.
+
+A radial `wash` of ink at 72% sits **over** the ground and under the type,
+darkening the centre so the contours never compete with the signature. Without
+it the marbling reads through the letterforms.
 
 ### Typography
 
@@ -97,25 +103,32 @@ rather than merely aligned.
 
 ## 3. Layout Primitives
 
-Poster canvas 1200 × 620. **Everything is centred on the midline at x 600.**
+Poster canvas 1200 × 566. **Everything is centred on the midline at x 600.**
 
 | Element | Position |
 | --- | --- |
-| Enso | centre (600, 214), radius 118, weight 16, gap 38° at −58° |
-| Bio glyphs | baselines 181 / 239 / 297, centred in the ring |
-| Signature | baseline 440 |
-| Role line | baseline 486 |
-| Hanko | 16 × 16 at y 526 |
+| Bio glyphs | baselines 134 / 192 / 250, size 50 |
+| Signature | baseline 376 |
+| Role line | baseline 422 |
+| Hanko | 16 × 16 at y 460 |
 
-Top and bottom margins are optically equal at roughly 86 units.
+Top and bottom margins are optically equal at roughly 90 units.
 
-Divider canvas 1200 × 88, full bleed, ink ground masked to nothing at both ends.
+The gap between the bio and the signature is measured to the **accent**, not to
+the cap line: the acute on "Á" rises above cap height and collided with 心 at
+the first spacing.
+
+Ink drops at (250, 250), (640, 300), (995, 215); divider drops at (320, 300)
+and (880, 322), placed below the strip so only their broad upper contours cross
+it. Drops inside a thin strip produce small tight arcs that read as noise.
+
+Divider canvas 1200 × 80, full bleed, ink ground masked to nothing at both ends.
 
 ## 4. Component Patterns
 
 ### Poster (`assets/poster.svg`)
 
-Enso, bio, signature, role, hanko, over seigaiha ground.
+Bio, signature, role, hanko, over the suminagashi ground.
 Accessibility: `role="img"`, `<title>`, and `aria-label` inside the SVG, plus
 `alt` on the `<img>` in the README. Both are required, because the SVG's own
 accessibility tree is not exposed through `<img>`.
@@ -150,13 +163,13 @@ governs the poster and headings, not the spelling of proper nouns.
 below the fold, and an `<img>` animation fires on load regardless of viewport,
 so its entrance would play unseen. Deliberately static.
 
-**The gesture:** the ring settles into place, the bio lands top to bottom in the
-reading direction of tategaki, the signature and role follow, and the hanko is
-pressed last, the way a seal closes a signed scroll. Nothing loops.
+**The gesture:** the bio lands top to bottom in the reading direction of
+tategaki, the signature and role follow, and the hanko is pressed last, the way
+a seal closes a signed scroll. The ground never animates. Nothing loops.
 
-- Curve: `cubic-bezier(.16, 1, .3, 1)`; the ring uses `(.22, 1, .36, 1)`.
-- Ring draw 1100ms, rises 780ms, press 520ms.
-  Delays 0 / 240 / 320 / 400 / 520 / 600 / 760ms. Total under 1.3s.
+- Curve: `cubic-bezier(.16, 1, .3, 1)`.
+- Rises 780ms, press 520ms.
+  Delays 120 / 200 / 280 / 420 / 500 / 660ms. Total under 1.2s.
 - `prefers-reduced-motion: reduce` sets `animation: none` on every class. The
   reduced state is the finished state.
 
@@ -164,8 +177,8 @@ pressed last, the way a seal closes a signed scroll. Nothing loops.
 nothing animates existence. An animation starting from `opacity: 0` with
 `animation-fill-mode: backwards` publishes a blank poster in any renderer that
 does not run the animation; this was reproduced in headless Chromium during the
-build. Worst case now: type sits 16 units low, the ring sits 14° rotated and 6%
-small, the hanko sits 20% large. Every element remains present and legible.
+build. Worst case now: type sits 16 units low and the hanko sits 20% large. The
+ground is never animated at all. Every element remains present and legible.
 
 ### Positioning versus motion
 
@@ -201,8 +214,9 @@ must live on separate nested groups. Never merge them.
 - Emoji standing in for icons.
 - A second typeface, or lime used on anything but the hanko.
 - `<picture>` with `prefers-color-scheme` for theme switching.
-- Ornament above the text floor: seigaiha and the enso must stay quieter than
-  the type they sit behind.
+- Ornament above the text floor: the ground must stay quieter than the type it
+  sits behind.
+- Tiling the ground. Marbling that repeats is wallpaper.
 - Aphoristic copy: the "serious statement, then punchy short negation" cadence.
 - `.github/README.md`. It silently overrides the root README on GitHub.
 - Anything depending on GitHub Actions. Actions is disabled account-wide
@@ -252,6 +266,17 @@ changes:
   closing divider. The keisen hairline and the horizontal brush rule are
   **superseded and removed**, since the enso now carries the brush gesture.
 
+**2026-08-14 — Suminagashi ground, enso removed.**
+Requested by the maintainer. The seigaiha tile and the enso ring are
+**superseded and deleted**. The ground is now suminagashi, generated rather
+than tiled. The bio stands on its own above the signature with no frame, and
+the poster lost the ring's height: 620 units becomes 566.
+
+Seigaiha was the safer pattern and it tiled cheaply, but a tile is the one
+thing marbling can never be. Generating the ground costs about 48KB of path
+data in the poster; that is the price of the ground not repeating, and it is
+worth paying.
+
 **2026-08-14 — Asset renames are the cache-busting mechanism.**
 `hero.svg` became `poster.svg`. GitHub serves README images through a caching
 proxy, and after a redesign the old artwork kept being served to anyone who had
@@ -266,7 +291,7 @@ The build tool needs Python, fontTools, uharfbuzz, and two font files. Shipping
 that toolchain into a profile repository costs more than it returns, and with
 Actions disabled nothing could run it anyway. Regenerating means rebuilding the
 script from this document; the geometry and tokens above are the specification,
-including the enso sweep parameters and the seigaiha tile construction. The
+including the suminagashi harmonics, drop positions, and shear. The
 generator is untested by design, a one-shot tool whose output is reviewed
 visually rather than asserted.
 
