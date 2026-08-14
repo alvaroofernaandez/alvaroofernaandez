@@ -1,0 +1,6 @@
+* text=auto eol=lf
+
+# Outlined type, produced by the asset generator described in .agents/DESIGN.md.
+# Marked generated so GitHub collapses them in diffs and keeps them out of the
+# repository language statistics.
+assets/*.svg linguist-generated=true
