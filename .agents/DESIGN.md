@@ -20,14 +20,24 @@ fact, not as branding.
 **The Japanese register is built from construction, not motifs.** Every
 ornament is drawn geometry with a name and a history:
 
-- **Suminagashi (墨流し)** — floating-ink marbling, the ground. Rings spread
-  from three drops and a current combs them into flowing contours. Generated
-  from harmonics plus a horizontal shear, **never tiled**: a repeating tile
-  reads as wallpaper, and marbling never repeats. Each ring is a closed curve
+- **Suminagashi (墨流し)** — floating-ink marbling, the ground of both assets,
+  in **two densities**. The poster is laid as mass: alternating filled bands,
+  high contrast, the sheet turned while the ink sits on it. The divider is laid
+  as contour: thin lines, quiet. Same technique, different amount of ink.
+
+  Generated, **never tiled**: a repeating tile reads as wallpaper and marbling
+  never repeats. Each ring is a closed curve
   `r(θ) = R·(1 + Σ aₖ·sin(nₖθ + φₖ + i·drift))`, squashed on y, then displaced
   by `x += comb·sin(y / combLen)`. Rings in one drop share its harmonics so
-  they nest like real ink; the phase drifts outward so they never look like
-  plain offset curves.
+  they nest like real ink; the phase drifts outward so they never read as plain
+  offset curves.
+
+  Two further things separate marbling from wood grain, and the poster needs
+  both. **Band widths must be irregular**, so ring spacing is drawn per ring
+  rather than fixed. And **the plane must be turned**: each vortex rotates
+  points around a centre by an angle falling off with distance,
+  `a = strength·(1 − d/reach)²`. Without the vortices the filled version reads
+  as zebra stripes and leaves visible bullseyes; that was the first attempt.
 - **The bio as a closing motto** — 鋼の心 set horizontally beneath the name and
   role, widely tracked. Wide tracking is what keeps three glyphs from reading
   as a cramped word rather than a formal mark.
@@ -63,20 +73,24 @@ Lime survives only as a token, unused, for anything the profile may need later.
 | `1.00` | The signature |
 | `0.72` | The role line (8.4:1) |
 | `0.70` | The bio motto (8:1) |
-| `0.20` | Suminagashi in the divider |
-| `0.13` | Suminagashi in the poster |
+| `0.46` | The poster's marbled mass |
+| `0.20` | Suminagashi contours in the divider |
 
 Ground texture sits below the text floor on purpose; it carries no information.
 Do not drop actual type below `0.52` (4.8:1). The bio was tried at `0.30`,
 measured 2.4:1, and failed even the 3:1 large-text minimum.
 
-The two suminagashi values differ because the divider is a thin strip: at the
-poster's `0.13` it would disappear. They are tuned to read as the same ink, not
-to be the same number.
+`0.46` is the ceiling for the mass. At full strength the bone bands read as a
+photograph behind the name rather than a ground under it, and the signature
+drops to 4.1:1.
 
-A radial `wash` of ink at 72% sits **over** the ground and under the type,
-darkening the centre so the contours never compete with the signature. Without
-it the marbling reads through the letterforms.
+**The veil is what makes the mass survivable.** A radial of ink sits over the
+ground and under the type, at 97% in the centre falling to nothing at the
+edges, and it is deliberately **elliptical**, shaped to the type block rather
+than to the canvas: `cx 600, cy 250, r 560` with `matrix(1,0,0,0.5,0,125)`. A
+circular veil either leaves the subtitle exposed or drowns the corners. With it
+the subtitle measures better than 6:1 even at the ends of its line, where the
+veil is weakest.
 
 ### Typography
 
@@ -116,9 +130,15 @@ Top and bottom margins are optically equal at roughly 112 units. The top margin
 is measured to the **accent**, not the cap line: the acute on "Á" rises above
 cap height.
 
-Ink drops at (250, 180), (640, 225), (995, 155); divider drops at (320, 300)
-and (880, 322), placed below the strip so only their broad upper contours cross
-it. Drops inside a thin strip produce small tight arcs that read as noise.
+Poster drops at (60, −110), (560, 520), (1180, −60), (980, 470): mostly
+**off-canvas**, so the frame catches the sweep of each ring system instead of
+its centre. Vortices at (300, 150) strength 2.5, (900, 300) strength −2.1, and
+(620, 40) strength 1.6, with reaches of 520 / 560 / 380. Opposed signs on the
+first two are what fold the bands back on themselves.
+
+Divider drops at (320, 300) and (880, 322), placed below the strip so only
+their broad upper contours cross it. Drops inside a thin strip produce small
+tight arcs that read as noise.
 
 Divider canvas 1200 × 80, full bleed, ink ground masked to nothing at both ends.
 
@@ -261,6 +281,21 @@ changes:
 - Ornament was added rather than implied: seigaiha ground, the enso ring, and a
   closing divider. The keisen hairline and the horizontal brush rule are
   **superseded and removed**, since the enso now carries the brush gesture.
+
+**2026-08-14 — The poster's ground becomes marbled mass; the divider does not.**
+Requested by the maintainer against two references: high-contrast liquid marble
+and layered Japanese cloud. Both are the same instruction underneath, that the
+ground should be **ink as mass, not ink as line**, so the poster moves to filled
+alternating bands. Clouds were the other candidate and were not taken: the
+existing suminagashi already answers the brief, and drawing cloud lobes with
+spiral scrolls risks the crude-illustration failure the design rules ban.
+
+The divider is explicitly **left alone** at the maintainer's request. Poster and
+divider therefore now read at two densities of the same technique. That is a
+deliberate contrast, not drift.
+
+Cost: the poster goes from 93KB to 131KB. Sampling per ring was capped lower to
+hold it there.
 
 **2026-08-14 — Bio moved horizontal, hanko removed, poster fully monochrome.**
 Requested by the maintainer. Three changes:
