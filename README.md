@@ -9,5 +9,3 @@ Leading product design as chief design officer at [Hagalink](https://hagalink.es
 ### 心 · How I work
 
 I start at the interface and work backwards into the architecture, because the constraints that decide a system show up first in what someone actually touches. Every project I work on carries its design system in writing, so the decisions outlive the conversation that produced them.
-
-<img src="assets/divider.svg" alt="" width="100%">
