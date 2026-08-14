@@ -286,23 +286,33 @@ thing marbling can never be. Generating the ground costs about 48KB of path
 data in the poster; that is the price of the ground not repeating, and it is
 worth paying.
 
-**2026-08-14 — A version query is the cache-busting mechanism.**
-*(supersedes the rename rule recorded the same day)*
+**2026-08-14 — Never put a version query on an asset URL.**
+*(corrects a wrong entry recorded the same day)*
 
 GitHub serves README images through a caching proxy, so after a redesign the
-old artwork keeps being served to anyone who already loaded the page. That is
-indistinguishable from a change that never shipped. Diagnose it by curling
-`raw.githubusercontent.com`: if the served bytes are already correct, it is
-cache, not code.
+old artwork can keep being served. Diagnose by curling the raw URL: if the
+served bytes are already correct, it is cache, not code.
 
-The first fix was a rename, `hero.svg` to `poster.svg`. That works but leaves
-the filename carrying version history, which it should not.
+An earlier entry here claimed `assets/poster.svg?v=2` was a verified fix. It
+was not. What had actually been verified was only that GitHub *preserves* the
+query when rewriting relative image paths. It does, and that proves nothing
+about caching. Measured afterwards on the same asset, one commit apart:
 
-Verified better: GitHub preserves query strings when it rewrites relative image
-paths, so `assets/poster.svg?v=2` reaches the browser intact and is a distinct
-cache key. **Bump the `v` on every visual change to a committed asset.** Do not
-rename files for this, and do not tell one person to hard-refresh: that fixes
-the page for them and for nobody else who has already visited.
+| URL | served |
+| --- | --- |
+| `poster.svg?v=3` | previous artwork |
+| `poster.svg?v=99` (never requested before) | previous artwork |
+| `poster.svg` | current artwork |
+
+The query is ignored when the cache key is built, so every variant collapses
+onto one entry, and that entry went stale the moment a query was first
+introduced. A brand-new `v` value cannot rescue it. **The query is worse than
+useless: it pins the asset to a stale entry the bare path has already left.**
+
+So: no query strings on asset URLs. The bare path refreshes on its own within
+minutes of a push. When a change must reach people who already have the old
+image in their browser cache, rename the file, which is what `hero.svg` to
+`poster.svg` did and the only mechanism actually observed to work.
 
 **2026-08-14 — Assets are committed, the generator is not.**
 The build tool needs Python, fontTools, uharfbuzz, and two font files. Shipping
