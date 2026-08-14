@@ -113,7 +113,7 @@ Divider canvas 1200 × 88, full bleed, ink ground masked to nothing at both ends
 
 ## 4. Component Patterns
 
-### Poster (`assets/hero.svg`)
+### Poster (`assets/poster.svg`)
 
 Enso, bio, signature, role, hanko, over seigaiha ground.
 Accessibility: `role="img"`, `<title>`, and `aria-label` inside the SVG, plus
@@ -251,6 +251,15 @@ changes:
 - Ornament was added rather than implied: seigaiha ground, the enso ring, and a
   closing divider. The keisen hairline and the horizontal brush rule are
   **superseded and removed**, since the enso now carries the brush gesture.
+
+**2026-08-14 — Asset renames are the cache-busting mechanism.**
+`hero.svg` became `poster.svg`. GitHub serves README images through a caching
+proxy, and after a redesign the old artwork kept being served to anyone who had
+already loaded the page, which reads exactly like a change that never shipped.
+Verify with `curl` against `raw.githubusercontent.com` before believing a bug
+report about a stale visual. When the served bytes are correct and the page
+still looks old, change the filename: a new path is a new cache entry for every
+visitor, which telling one person to hard-refresh is not.
 
 **2026-08-14 — Assets are committed, the generator is not.**
 The build tool needs Python, fontTools, uharfbuzz, and two font files. Shipping

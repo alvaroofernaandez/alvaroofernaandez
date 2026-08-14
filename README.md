@@ -1,4 +1,4 @@
-<img src="assets/hero.svg" alt="Álvaro Fernández Amaro, product designer and software architect, chief design officer at Hagalink. 鋼の心, heart of steel, set inside an enso brush ring." width="100%">
+<img src="assets/poster.svg" alt="Álvaro Fernández Amaro, product designer and software architect, chief design officer at Hagalink. 鋼の心, heart of steel, set inside an enso brush ring." width="100%">
 
 I design and build software products end to end: the interface people use, the architecture underneath it, and the design system that keeps the two in agreement. Based in Córdoba, Spain.
 
